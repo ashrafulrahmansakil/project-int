@@ -9,7 +9,7 @@
 	--light-grey: #707070;
 	--transparent: #0000008f;
 	--dark: #000;
-	--Spicy: #82633d;
+	--spicy: #82633d;
 	--pink: #FF1493;
 }
 
@@ -31,7 +31,7 @@
 	}
 	.navbar__menu ul li {
 		display: block;
-	}
+	padding: 1rem;}
 	.img__box,
 	.footer__area__box,
 	.company__box__element__container,

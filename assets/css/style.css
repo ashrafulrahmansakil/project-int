@@ -50,7 +50,7 @@ video.video {
 
 .header__navmenu ul li {
 	display: inline-block;
-	padding: 0.5rem 1rem;
+	padding: 0rem 0.5rem;
 	list-style-type: none;
 }
 
@@ -123,7 +123,7 @@ video.video {
 }
 
 .btn__left {
-	background: #6c0707;
+	background-color:var(--red);
 	padding: 0.5rem 1.8rem;
 	margin: 1rem;
 }
@@ -186,14 +186,14 @@ input#check,
 
 .section__box__item {
 	padding: 1rem;
-	background: #1d956e;
+	background-color:var(--green);
 	color: var(--white);
 	border-radius: 0.4rem;
 	box-shadow: 0 8px 20px 0 rgb(76 76 76 / 20%);
 }
 
 #item__box {
-	background-color: #6c0707;
+	background-color:var(--light-red);
 }
 
 .icon {
@@ -229,7 +229,7 @@ span,
 }
 
 .services__item:hover {
-	background-color: #fff;
+	background-color:var(--white);
 	transition: all 0.3s ease-in-out;
 }
 
@@ -262,15 +262,15 @@ img {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 1rem;
-	background-color: #243034;
+	background-color: var(--light-grey);
 	padding: 6rem 4rem;
 	line-height: 1.8rem;
-	color: var(--spicy);
+	color: var(--white);
 }
 
 .business__box__item1,
 .box {
-	background: #c8c8c8;
+	background: var(--light-white);
 }
 
 .business__box__element p {
@@ -295,7 +295,7 @@ img {
 }
 
 .message__box {
-	background-color: #c8c8c8;
+	background-color: var(--deep-white);
 	padding: 0 1.5rem;
 }
 
@@ -317,7 +317,7 @@ select {
 
 input[type="submit"] {
 	width: 100%;
-	background-color: #6c0707;
+	background-color: var(--red);
 	color: var(--white);
 	padding: 1rem 0;
 	margin: 1rem 0;
@@ -326,7 +326,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-	background-color: #660000;
+	background-color:var(--light-red);
 }
 
 form {
@@ -335,7 +335,7 @@ form {
 	max-width: 600px;
 	width: 100%;
 	margin: 20px 0;
-	border: var(--light-grey) solid 1px;
+	border: var(--red) solid 1px;
 }
 
 input[type="text"],
@@ -381,7 +381,7 @@ textarea {
 
 .signup__area,
 .signin__area {
-	background-color: #c8c8c8;
+	background-color:var(--deep-white);
 }
 
 .signup__contant,
@@ -394,7 +394,7 @@ textarea {
 }
 
 .footer__area {
-	background-color: #243034;
+	background-color: var(--grey);
 	color: var(--white);
 }
 
@@ -405,5 +405,5 @@ textarea {
 .contact__container {
 	text-align: center;
 	padding: 5rem 0;
-	background-color: #c8c8c8;
+	background-color:var(--deep-white);
 }
