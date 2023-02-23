@@ -39,10 +39,10 @@ video.video {
 }
 
 .header {
-	background: linear-gradient(rgb(0 0 0 / 40%) 100%, rgb(0 0 0 / 55%) 100%), url(../img/bg-1.jpg) center /cover no-repeat;
+	background: linear-gradient(rgb(0 0 0 / 40%) 100%, rgb(0 0 0 / 55%) 100%), url(../img/bg-1.jpg) no-repeat center center /cover ;
 }
 
-.header__navbar {
+.header__navbar { 
 	display: flex;
 	justify-content: space-between;
 	padding: 1rem 0;
@@ -141,16 +141,58 @@ video.video {
 	border: var(--white) solid 1px;
 }
 
-.btn__suit {
-	background-color: #fff;
-	color: var(--dark);
+.hamburger {
+	display: none;
+	cursor: pointer;
+	width: 40px;
+	height: 30px;
+	position: relative;
 }
 
-.humbarger {
-	display: none;
-	font-size: 1.5rem;
-	cursor: pointer;
-	color: var(--dark);
+.hamburger span {
+	display: block;
+	position: absolute;
+	height: 2px;
+	width: 100%;
+	background: #fff;
+	border-radius: 10px;
+	opacity: 1;
+	left: 0;
+	transform: rotate(0deg);
+	transition: 0.25s ease-in-out;
+}
+
+.hamburger span:nth-child(1) {
+	top: 0px;
+}
+
+.hamburger span:nth-child(2),
+.hamburger span:nth-child(3) {
+	top: 10px;
+}
+
+.hamburger span:nth-child(4) {
+	top: 20px;
+}
+
+.hamburger.open span:nth-child(1) {
+	top: 10px;
+	width: 0%;
+	left: 50%;
+}
+
+.hamburger.open span:nth-child(2) {
+	transform: rotate(45deg);
+}
+
+.hamburger.open span:nth-child(3) {
+	transform: rotate(-45deg);
+}
+
+.hamburger.open span:nth-child(4) {
+	top: 10px;
+	width: 0%;
+	left: 50%;
 }
 
 input#check,
@@ -338,6 +380,8 @@ form {
 	border: var(--red) solid 1px;
 }
 
+
+input[type="email"],
 input[type="text"],
 input[type="password"] {
 	width: 100%;
@@ -347,6 +391,7 @@ input[type="password"] {
 	border: var(--light-grey) solid 1px;
 	border-radius: 4px;
 	box-sizing: border-box;
+	outline: none;
 }
 
 .contact {
@@ -402,7 +447,7 @@ textarea {
 	padding: 8rem 0;
 }
 
-.contact__container {
+.contact__area {
 	text-align: center;
 	padding: 5rem 0;
 	background-color:var(--deep-white);
